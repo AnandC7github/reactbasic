@@ -5,7 +5,14 @@ const App = () => {
   const isNameShowing = false;
   return (
     <div className="App">
-      <h1>Hello, {isNameShowing ? name : 'someone'}!</h1>
+      <h1>Hello {2 + 2}</h1>
+      {name ? (
+      <>
+        test
+      </>
+      ) : (
+        test
+      )}
 
     </div>
   );
