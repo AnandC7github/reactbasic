@@ -1,14 +1,14 @@
 import './App.css';
 
 const App = () => {
-  const name = null;
+  const name = 'Jane';
   const isNameShowing = false;
   return (
     <div className="App">
       <h1>Hello {2 + 2}</h1>
       {name ? (
       <>
-        test
+        <h1>{name}</h1>
       </>
       ) : (
         <>
