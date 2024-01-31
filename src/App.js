@@ -1,19 +1,19 @@
 import './App.css';
 
 //new functional Component
-const Person = () => {
+const Person = (props) => {
   return(
   <>
-   <h1>First Name : John</h1>
-   <h2>Last Name : Doe</h2>
-   <h2>Age : 30</h2>
+   <h1>First Name : {props.name}</h1>
+   <h2>Last Name : {props.lastName}</h2>
+   <h2>Age : {props.Age}</h2>
   </>
 )}
 
 const App = () => {
   return (
     <div className="App">
-      < Person />
+      < Person name = {'John'} lastName = {'Doe'} Age = {30}/>
       < Person />
       < Person />
       < Person />
