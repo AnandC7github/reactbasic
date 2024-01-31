@@ -6,7 +6,7 @@ const Person = () => {
   <>
    <h1>First Name : John</h1>
    <h2>Last Name : Doe</h2>
-   <h3>Age : 30</h3>
+   <h2>Age : 30</h2>
   </>
 )}
 
