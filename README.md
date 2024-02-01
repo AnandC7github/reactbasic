@@ -58,6 +58,3 @@ The application fetches movie data from the Open Movie Database (OMDb) API.
 
 Feel free to contribute to the development of Movie Land by submitting pull requests or reporting issues on the GitHub repository.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
