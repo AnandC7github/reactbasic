@@ -45,7 +45,7 @@ const App = () => {
                 />
             </div>
             <div className="container">
-                < MovieCard movie1={movie1}/>
+                < MovieCard movie1={movies[0]}/>
             </div>
         </div>
     );
