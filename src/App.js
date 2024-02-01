@@ -26,6 +26,7 @@ const App = () => {
                 <input
                 placeholder="search for movies"
                 value = "Superman" 
+                onChange={() => {}}
                 />
             </div>
         </div>
