@@ -10,7 +10,7 @@ const App = () => {
         const response = await fetch(`${API_URL}&s=${title}`);
         const data = await response.json();
 
-        console.log(data);
+        console.log(data.Search);
     }
     //useeffect accepts a callback function and a dependency array as the other one if we want to call it from start only
     useEffect(() => {
