@@ -10,9 +10,9 @@ const App = () => {
     //A callback function
     // As soon as the above component renders, this one gives alert
     useEffect(() => {
-      // This is right way as we can set counter to 100 while reload using only this setter function
-      setCounter(100);
-    }, []);
+      //Alert everytime when you change the counter value or reload the page
+      alert("You have changed the counter to " +counter);
+    }, [counter]);
   return (
     <div className="App">
       <button onClick={() => setCounter((prevCount) => prevCount - 1)}>-</button>
