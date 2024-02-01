@@ -10,7 +10,8 @@ const App = () => {
   //A callback function
   // As soon as the above component renders, this one gives alert
   useEffect(() => {
-    alert('Reload')
+    // we can never modify state manually. So it will be an error.
+    counter = 100;
   })
   return (
     <div className="App">
