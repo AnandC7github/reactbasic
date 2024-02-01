@@ -12,7 +12,7 @@ const App = () => {
     useEffect(() => {
       // This is right way as we can set counter to 100 while reload using only this setter function
       setCounter(100);
-    }, [setCounter]);
+    }, []);
   return (
     <div className="App">
       <button onClick={() => setCounter((prevCount) => prevCount - 1)}>-</button>
