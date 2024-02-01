@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useState, useEffect } from "react";
 import './App.css';
 import SearchIcon from './search.svg';
@@ -21,7 +21,7 @@ const App = () => {
         const response = await fetch(`${API_URL}&s=${title}`);
         const data = await response.json();
 
-        console.log(data.Search);
+        setMovies(data.Search);
     }
     //useeffect accepts a callback function and a dependency array as the other one if we want to call it from start only
     useEffect(() => {
