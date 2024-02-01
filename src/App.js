@@ -24,7 +24,8 @@ const App = () => {
 
             <div className="search">
                 <input
-                placeholder="search for movies" 
+                placeholder="search for movies"
+                value = "Superman" 
                 />
             </div>
         </div>
