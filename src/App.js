@@ -1,5 +1,5 @@
-import React from "react";
-import { useEffect } from "react";
+import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import './App.css';
 import SearchIcon from './search.svg';
 import MovieCard from "./MovieCard";
@@ -16,7 +16,7 @@ const movie1 = {
 }
 
 const App = () => {
-
+    const [movies, setMovies] = useState([]);
     const searchMovies = async (title) => {
         const response = await fetch(`${API_URL}&s=${title}`);
         const data = await response.json();
